@@ -134,20 +134,20 @@ Les personnages partent immédiatement à leur poursuite.
 
 ## Statistiques des personnages
 
-| Personnage                                   | Dégâts infligés |     Dégâts subis | Dégâts soignés | Coups de grâce                     |
-| -------------------------------------------- | --------------: | ---------------: | -------------: | ---------------------------------- |
-| Bois                                         |              10 |       8 radiants |              0 | Aucun                              |
-| [Baba](../personnages-joueurs/baba-bunta.md) |              22 | 16 radiants (KO) |              0 | Mort-vivant n°2                    |
-| [Livia](../personnages-joueurs/livia.md)     |              14 |    2 contondants |              0 | Aucun                              |
-| Zarock                                       |              10 |    2 contondants |              0 | Grand mort-vivant, Mort-vivant n°3 |
+| Personnage                                          | Dégâts infligés |     Dégâts subis | Dégâts soignés | Coups de grâce                     |
+| --------------------------------------------------- | --------------: | ---------------: | -------------: | ---------------------------------- |
+| [L'enfant (Bois)](../personnages-joueurs/enfant.md) |              10 |       8 radiants |              0 | Aucun                              |
+| [Baba](../personnages-joueurs/baba-bunta.md)        |              22 | 16 radiants (KO) |              0 | Mort-vivant n°2                    |
+| [Livia](../personnages-joueurs/livia.md)            |              14 |    2 contondants |              0 | Aucun                              |
+| [Zarock le Rempart](../personnages-joueurs/zarock.md)          |              10 |    2 contondants |              0 | Grand mort-vivant, Mort-vivant n°3 |
 
 ## Ennemis
 
 | Ennemi                       | Description                          | Dégâts reçus | Dégâts infligés | A touché                                                    | Coup de grâce                                |
 | ---------------------------- | ------------------------------------ | -----------: | --------------: | ----------------------------------------------------------- | -------------------------------------------- |
-| Grand mort-vivant            | Mort-vivant d'environ 2 mètres       |           12 |               0 | —                                                           | Zarock                                       |
+| Grand mort-vivant            | Mort-vivant d'environ 2 mètres       |           12 |               0 | —                                                           | Zarock le Rempart                                       |
 | Mort-vivant                  | Petit mort-vivant armé               |           28 |               2 | [Livia](../personnages-joueurs/livia.md) (2)                | [Baba](../personnages-joueurs/baba-bunta.md) |
-| Mort-vivant lanceur de sorts | Petit mort-vivant utilisant la magie |           24 |              24 | Bois (8), [Baba](../personnages-joueurs/baba-bunta.md) (16) | Zarock                                       |
+| Mort-vivant lanceur de sorts | Petit mort-vivant utilisant la magie |           24 |              24 | Bois (8), [Baba](../personnages-joueurs/baba-bunta.md) (16) | Zarock le Rempart                                       |
 
 ## Capacités et sorts utilisés
 
@@ -167,7 +167,7 @@ Les personnages partent immédiatement à leur poursuite.
 - Attaque sournoise
 - Désengagement
 
-### Zarock
+### Zarock le Rempart
 
 - Foncer
 - Sentinelle

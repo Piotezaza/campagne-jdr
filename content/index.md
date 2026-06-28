@@ -13,7 +13,7 @@ title: JDR Wiki
 - [🐸 Baba BUNTA](./personnages-joueurs/baba-bunta.md)
 - [🍼 L'enfant](./personnages-joueurs/enfant.md)
 - [🧚🏻‍♀️ Livia](./personnages-joueurs/livia.md)
-- [🛡️ Zarock](./personnages-joueurs/zarock.md)
+- [🛡️ Zarock le Rempart](./personnages-joueurs/zarock.md)
 
 ---
 
