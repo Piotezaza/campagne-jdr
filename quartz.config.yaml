@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: fr-FR
-  baseUrl: localhost
+  baseUrl: Piotezaza.github.io/campagne-jdr
   ignorePatterns:
     - private
     - templates
@@ -156,7 +156,7 @@ plugins:
     enabled: true
 
   - source: github:quartz-community/cname
-    enabled: true
+    enabled: false
 
   - source: github:quartz-community/canvas-page
     enabled: true
