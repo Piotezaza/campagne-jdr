@@ -6,7 +6,9 @@ import MobileOnly from "./MobileOnly"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
 
-export { componentRegistry, defineComponent } from "./registry"
+import { componentRegistry, defineComponent } from "./registry"
+
+export { componentRegistry, defineComponent }
 export { External } from "./external"
 export type { ComponentManifest, RegisteredComponent } from "./registry"
 export type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"

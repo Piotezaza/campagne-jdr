@@ -1,3 +1,423 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+:root {
+  --dnd-gold: #b08d57;
+  --dnd-gold-light: #c8aa6e;
+  --dnd-gold-dark: #8b6b2f;
+}
+
+.article-title,
+.content-meta {
+  max-width: none;
+}
+
+.fiche-jdr-page {
+  width: 100%;
+  max-width: none;
+  margin: 0 auto;
+  font-size: 0.9rem;
+}
+
+/* Header */
+
+.fiche-header {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fiche-identity {
+  border: 3px double var(--dnd-gold);
+  background: var(--light);
+  padding: 1rem;
+}
+
+.fiche-identity h1 {
+  margin: 0 0 1rem;
+  font-size: 2.3rem;
+}
+
+.portrait-container {
+  border: 3px double var(--dnd-gold);
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.portrait-jdr {
+  width: 100%;
+  height: 100%;
+  max-height: 280px;
+  object-fit: cover;
+}
+
+/* Layout */
+
+.fiche-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.bloc {
+  min-width: 0;
+  border: 3px double var(--dnd-gold);
+  background: var(--light);
+  padding: 1rem;
+}
+
+.bloc.large {
+  grid-column: span 2;
+}
+
+.bloc.full {
+  grid-column: 1 / -1;
+}
+
+.bloc h2 {
+  margin: 0 0 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--dnd-gold);
+  padding-bottom: 0.4rem;
+}
+
+/* Tables */
+
+.fiche-jdr table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.fiche-jdr th,
+.fiche-jdr td {
+  border: 1px solid var(--gray);
+  padding: 0.45rem 0.55rem;
+  vertical-align: middle;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.fiche-jdr th {
+  background: var(--lightgray);
+  font-weight: 700;
+}
+
+/* Infos personnage */
+
+.info-table th {
+  width: 18%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.info-table td {
+  width: 32%;
+  font-weight: 500;
+}
+
+/* Caractéristiques */
+
+.abilities-table {
+  margin-bottom: 1rem !important;
+  border: 3px double var(--dnd-gold);
+  background: var(--light);
+}
+
+.abilities-table th,
+.abilities-table td {
+  text-align: center;
+}
+
+.abilities-table th {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.abilities-table .mod-row td {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.abilities-table .score-row td {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Tables compactes */
+
+.compact-table th {
+  width: 70%;
+  text-align: left;
+}
+
+.compact-table td {
+  width: 30%;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Compétences */
+
+.skills-table th {
+  width: 27%;
+  text-align: left;
+}
+
+.skills-table td {
+  width: 6%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.skills-table em {
+  color: var(--dnd-gold-light);
+  font-style: normal;
+  font-size: 0.75rem;
+}
+
+/* Tables larges */
+
+.wide-table th,
+.wide-table td {
+  text-align: left;
+}
+
+.wide-table th:not(:first-child),
+.wide-table td:not(:first-child) {
+  text-align: center;
+}
+
+/* Tables texte */
+
+.text-table th {
+  text-align: left;
+}
+
+.text-table td {
+  line-height: 1.45;
+}
+
+/* Sorts */
+
+.spellcasting-table {
+  margin-bottom: 0.75rem !important;
+}
+
+.spellcasting-table th {
+  width: 13%;
+  text-align: left;
+}
+
+.spellcasting-table td {
+  width: 12%;
+  text-align: center;
+  font-weight: 700;
+}
+
+.spell-slots-table {
+  margin-bottom: 1rem !important;
+}
+
+.spell-slots-table th,
+.spell-slots-table td {
+  text-align: center;
+}
+
+.spell-slots-table td:nth-child(1),
+.spell-slots-table td:nth-child(4),
+.spell-slots-table td:nth-child(7) {
+  font-weight: 700;
+  background: var(--lightgray);
+}
+
+.spells-table th,
+.spells-table td {
+  text-align: left;
+}
+
+.spells-table th:nth-child(1),
+.spells-table td:nth-child(1) {
+  width: 7%;
+  text-align: center;
+}
+
+.spells-table th:nth-child(2),
+.spells-table td:nth-child(2) {
+  width: 24%;
+}
+
+.spells-table th:nth-child(3),
+.spells-table td:nth-child(3) {
+  width: 15%;
+}
+
+.spells-table th:nth-child(4),
+.spells-table td:nth-child(4) {
+  width: 12%;
+}
+
+.spells-table th:nth-child(5),
+.spells-table td:nth-child(5),
+.spells-table th:nth-child(6),
+.spells-table td:nth-child(6),
+.spells-table th:nth-child(7),
+.spells-table td:nth-child(7) {
+  width: 8%;
+  text-align: center;
+}
+
+.spells-table th:nth-child(8),
+.spells-table td:nth-child(8) {
+  width: 18%;
+}
+
+/* Neutralise les scrollbars des tableaux Quartz */
+
+.fiche-jdr div:has(> table),
+.fiche-jdr .table-container {
+  overflow-x: visible;
+}
+
+.spells-table tbody tr:nth-child(even) {
+  background-color: rgba(176, 141, 87, 0.15);
+}
+
+.spells-table tbody tr:hover {
+  background-color: rgba(176, 141, 87, 0.3);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .fiche-header {
+    grid-template-columns: 1fr;
+  }
+
+  .portrait-jdr {
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .fiche-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bloc.large,
+  .bloc.full {
+    grid-column: span 1;
+  }
+
+  .skills-table,
+  .skills-table tbody,
+  .skills-table tr,
+  .skills-table th,
+  .skills-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .skills-table tr {
+    margin-bottom: 0.5rem;
+  }
+
+  /* ===========================
+   CARTE DE SORT
+=========================== */
+
+  .carte-sort .article-title,
+  .carte-sort .content-meta {
+    display: none;
+  }
+
+  .spell-card-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .spell-card-dnd {
+    width: 375px;
+    min-height: 370px;
+    padding: 4px;
+
+    color: #120800;
+    background:
+      radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.65), transparent 30%),
+      radial-gradient(circle at 80% 90%, rgba(100, 60, 10, 0.12), transparent 35%),
+      linear-gradient(135deg, #f3ead1 0%, #efe0b8 52%, #e3c98f 100%);
+
+    border: 3px solid #050505;
+    border-radius: 8px;
+
+    box-shadow:
+      inset 0 0 18px rgba(80, 45, 10, 0.18),
+      0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .spell-card-title {
+    background: #650000;
+    border: 1px solid #e2c16a;
+    border-radius: 6px;
+    padding: 2px 7px;
+    margin-bottom: 3px;
+  }
+
+  .spell-card-title h1 {
+    margin: 0;
+    color: #fff4c8;
+    font-size: 0.95rem;
+    line-height: 1.15;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .spell-card-level {
+    margin: 0 0 5px;
+    font-style: italic;
+    font-size: 0.9rem;
+    line-height: 1.15;
+  }
+
+  .spell-card-meta {
+    margin-bottom: 6px;
+  }
+
+  .spell-card-meta p {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 0.9rem;
+  }
+
+  .spell-card-meta strong {
+    font-weight: 800;
+  }
+
+  .spell-card-meta em {
+    font-style: normal;
+  }
+
+  .spell-card-description {
+    font-size: 0.88rem;
+    line-height: 1.12;
+  }
+
+  .spell-card-description p {
+    margin: 0 0 0.45rem;
+  }
+
+  @media (max-width: 500px) {
+    .spell-card-dnd {
+      width: 100%;
+      min-height: auto;
+    }
+  }
+}
