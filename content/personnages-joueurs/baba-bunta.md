@@ -194,6 +194,12 @@ cssclasses:
 <tr>
 <th>Caractéristique d’incantation</th>
 <td>Charisme</td>
+<th>Sorts / jour</th>
+<td>--</td>
+<th>Emplacements de sorts</th>
+<td>2</td>
+</tr>
+<tr>
 <th>Modificateur</th>
 <td>+4</td>
 <th>DD des sorts</th>
@@ -325,7 +331,7 @@ cssclasses:
 </div>
 
 <div class="bloc large">
-<h2>Capacités de classe</h2>
+<h2>Capacités</h2>
 
 <table class="text-table">
 <tbody>

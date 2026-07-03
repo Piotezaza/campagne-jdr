@@ -214,7 +214,7 @@ cssclasses:
 </div>
 
 <div class="bloc large">
-<h2>Capacités de classe</h2>
+<h2>Capacités</h2>
 
 <table class="text-table">
 <tbody>
