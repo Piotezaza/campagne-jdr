@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: fr-FR
-  baseUrl: Piotezaza.github.io/campagne-jdr
+  baseUrl: "piotezaza.github.io/campagne-jdr"
   ignorePatterns:
     - private
     - templates
