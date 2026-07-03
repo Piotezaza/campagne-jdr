@@ -5,6 +5,7 @@ title: JDR Wiki
 # Sessions
 
 - [Session 000](./sessions/session-000.md)
+- [Session 001](./sessions/session-001.md)
 
 ---
 
